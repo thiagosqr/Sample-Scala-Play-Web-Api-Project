@@ -1,0 +1,93 @@
+2013-08-28 17:08:03,233 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2013-08-28 17:08:24,008 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/ecom_api_development
+
+2013-08-28 17:08:24,173 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2013-08-28 17:08:33,705 - [INFO] - from play in iteratee-execution-context-3 
+Starting application default Akka system.
+
+2013-08-28 17:08:34,397 - [ERROR] - from application in play-internal-execution-context-2 
+
+
+! @6fdm8185b - Internal server error, for (GET) [/product/1] ->
+
+play.api.Application$$anon$1: Execution exception[[IllegalArgumentException: Not Acceptable]]
+	at play.api.Application$class.handleError(Application.scala:289) ~[play_2.10.jar:2.1.2]
+	at play.api.DefaultApplication.handleError(Application.scala:383) ~[play_2.10.jar:2.1.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$play$core$server$netty$PlayDefaultUpstreamHandler$$handle$1$1.apply(PlayDefaultUpstreamHandler.scala:143) ~[play_2.10.jar:2.1.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$play$core$server$netty$PlayDefaultUpstreamHandler$$handle$1$1.apply(PlayDefaultUpstreamHandler.scala:139) ~[play_2.10.jar:2.1.2]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) ~[play_2.10.jar:2.1.2]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) ~[play_2.10.jar:2.1.2]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend$1$$anonfun$apply$1.apply(Promise.scala:104) ~[play_2.10.jar:2.1.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Thread.java:724) ~[na:1.7.0_25]
+java.lang.IllegalArgumentException: Not Acceptable
+	at models.Products$.marshall(Product.scala:45) ~[na:na]
+	at controllers.ProductResource$$anonfun$get$1$$anonfun$apply$1.apply(ProductResource.scala:31) ~[na:na]
+	at controllers.ProductResource$$anonfun$get$1$$anonfun$apply$1.apply(ProductResource.scala:29) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at controllers.ProductResource$$anonfun$get$1.apply(ProductResource.scala:29) ~[na:na]
+	at controllers.ProductResource$$anonfun$get$1.apply(ProductResource.scala:27) ~[na:na]
+	at play.api.db.slick.package$DBAction$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.apply(package.scala:36) ~[play-slick_2.10-0.4.0.jar:0.4.0]
+	at play.api.db.slick.package$DBAction$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.apply(package.scala:36) ~[play-slick_2.10-0.4.0.jar:0.4.0]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:137) ~[akka-actor_2.10.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1417) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:262) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1478) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[scala-library.jar:na]
+
+2013-08-28 17:13:22,165 - [ERROR] - from application in play-internal-execution-context-4 
+
+
+! @6fdm8hhnh - Internal server error, for (GET) [/product/1] ->
+
+play.api.Application$$anon$1: Execution exception[[IllegalArgumentException: Not Acceptable]]
+	at play.api.Application$class.handleError(Application.scala:289) ~[play_2.10.jar:2.1.2]
+	at play.api.DefaultApplication.handleError(Application.scala:383) ~[play_2.10.jar:2.1.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$play$core$server$netty$PlayDefaultUpstreamHandler$$handle$1$1.apply(PlayDefaultUpstreamHandler.scala:143) ~[play_2.10.jar:2.1.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$play$core$server$netty$PlayDefaultUpstreamHandler$$handle$1$1.apply(PlayDefaultUpstreamHandler.scala:139) ~[play_2.10.jar:2.1.2]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) ~[play_2.10.jar:2.1.2]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) ~[play_2.10.jar:2.1.2]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend$1$$anonfun$apply$1.apply(Promise.scala:104) ~[play_2.10.jar:2.1.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Thread.java:724) ~[na:1.7.0_25]
+java.lang.IllegalArgumentException: Not Acceptable
+	at models.Products$.marshall(Product.scala:45) ~[na:na]
+	at controllers.ProductResource$$anonfun$get$1$$anonfun$apply$1.apply(ProductResource.scala:31) ~[na:na]
+	at controllers.ProductResource$$anonfun$get$1$$anonfun$apply$1.apply(ProductResource.scala:29) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at controllers.ProductResource$$anonfun$get$1.apply(ProductResource.scala:29) ~[na:na]
+	at controllers.ProductResource$$anonfun$get$1.apply(ProductResource.scala:27) ~[na:na]
+	at play.api.db.slick.package$DBAction$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.apply(package.scala:36) ~[play-slick_2.10-0.4.0.jar:0.4.0]
+	at play.api.db.slick.package$DBAction$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.apply(package.scala:36) ~[play-slick_2.10-0.4.0.jar:0.4.0]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:137) ~[akka-actor_2.10.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1417) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:262) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1478) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[scala-library.jar:na]
+
+2013-08-28 17:15:37,486 - [INFO] - from play in play-internal-execution-context-4 
+Shutdown application default Akka system.
+
+2013-08-28 17:15:37,859 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:mysql://localhost/ecom_api_development
+
+2013-08-28 17:15:37,868 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+

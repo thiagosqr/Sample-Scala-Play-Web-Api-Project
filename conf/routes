@@ -1,0 +1,7 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /product/:id              controllers.ProductResource.get(id:Long)
+
+POST    /product	              controllers.ProductsResource.post
